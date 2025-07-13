@@ -43,7 +43,8 @@ bool IsValidString(char *str)
 char *InputString(size_t size)
 {
     char *InputMessage = (char *)(malloc((size + 1) * sizeof(char)));
-    if (InputMessage == NULL) {
+    if (InputMessage == NULL)
+    {
         printf(ERROR_MEMORY_ALLOCATION_FAILURE);
         abort();
     }
